@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta charset="UTF-8">
+		<title>loveU</title>
+		<link rel="stylesheet" type="text/css" href="./css/format.css">
+	</head>
+
+	<body style="margin:0px">
+		<audio autoplay loop>
+			<source src="music/ama.mp3" type="audio/mpeg">
+			<source src="music/ama.mp3" type="audio/ogg">
+			<source src="music/ama.mp3" type="audio/wav">
+			Your browser does not support the audio.
+		</audio>
+		<canvas></canvas>
+		<div id="imgTxt">
+			<span id="Txt"></span> <br />
+			<span id="tmp"></span>
+			<img id="img" src="">
+		</div>
+		<div id="heartTxt">
+			<span id="clickMe">Click!</span>
+			<div id="heart">
+				<button id="button" onclick="play()"></button>
+			</div>
+		</div>
+		<div id="content">
+			<h2 id="together">We have been together</h2>
+			<div id="timer">
+				<b id="d"></b> Days 
+				<b id="h"></b> Hours
+				<b id="m"></b> Minutes
+				<b id="s"></b> Seconds
+			</div>
+		</div>
+
+    	<div id = "typeDiv">
+        	<span id="txt1"></span> <br />
+        	<span id="txt2"></span>
+    	</div>		
+
+		<script >
+			var ok = 0;
+			var flag = 1;
+			var myImage = document.getElementById("img");
+			var myTxt = document.getElementById("Txt");
+			var imageArray = ["pic/pic1.jfif", "pic/pic2.jfif", "pic/pic3.gif", "pic/pic4.jfif", "pic/pic5.gif", "pic/pic6.png", 
+			"pic/pic7.png", "pic/pic8.png", "pic/pic9.jfif", "pic/pic10.png", "pic/pic11.gif","pic/pic12.gif" ];
+			var imageIndex = 0;
+			var txtArray = ["Hello There", "I want to send you a message to your charming eyes","You are beautiful, the moon looks like you", "I have fallen in love with you, my most precious possession~(｡･ω･｡)ﾉ♡",
+			 "I want to spend my life with you only", "You are strong, you are amazing, your mind has a tremendous power of thoughts", 
+			 "I want you to know that I love you very much", "I will never leave you", "Because I want to complete my life with you and live only with you"];
+			 var len = imageArray.length;
+			var t = 0;
+		</script>
+		
+		<script type="text/javascript" src="./js/stars.js"></script>
+		<script type="text/javascript" src="./js/typeWriter.js"></script>
+		<script type="text/javascript" src="./js/date.js"></script>
+		<script type="text/javascript" src="./js/playImg.js"></script>
+	</body>
+</html>
